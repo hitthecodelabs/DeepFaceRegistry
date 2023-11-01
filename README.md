@@ -34,7 +34,7 @@ npm run serve -- --port 4000
 ```
 
 ### Backend
-Ensure you have poetry installed. Navigate to the camera_track_backend directory:
+Ensure you have poetry installed. Navigate to the `camera_track_backend` directory:
 
 ```bash
 cd camera_track_backend
