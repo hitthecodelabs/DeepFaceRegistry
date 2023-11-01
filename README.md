@@ -39,5 +39,5 @@ Ensure you have poetry installed. Navigate to the `camera_track_backend` directo
 ```bash
 cd camera_track_backend
 poetry run python manage.py runserver localhost:8000
-This will start the backend server on http://localhost:8000/
 ```
+This will start the backend server on http://localhost:8000/
