@@ -1,0 +1,9 @@
+# .gitignore
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.env
+db.sqlite3
+node_modules/
+dist/

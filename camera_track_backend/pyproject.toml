@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "camera-track"
+version = "0.1.0"
+description = ""
+authors = ["Rodney Torres <ronytove@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "camera_track"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+djangorestframework = "^3.14.0"
+django = "^4.1.7"
+django-simple-history = "^3.2.0"
+pillow = "^9.4.0"
+mysqlclient = "^2.1.1"
+python-dotenv = "^1.0.0"
+argon2-cffi = "^21.3.0"
+drf-yasg = "^1.21.5"
+opencv-python = "^4.7.0.72"
+django-cors-headers = "^3.14.0"
+fabric = "^3.1.0"
+opencv-contrib-python = "^4.8.0.74"
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.2"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,33 @@
+version: '3.3'
+services:
+  python:
+    tty: true
+    restart: always
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: "${DB_NAME}"
+    ports:
+      - '8000:8000'
+    volumes:
+      #Map the server directory in into the container at /code
+      - .:/camera_track
+    #command: poetry run python manage.py runserver localhost:8000
+    links:
+      - mysql
+  mysql:
+    image: mysql:8.0.31
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    restart: always
+    container_name: "${DB_HOST}"
+    environment:
+      MYSQL_DATABASE: "${DB_NAME}"
+      MYSQL_USER: "${DB_USER}"
+      MYSQL_PASSWORD: "${DB_PASS}"
+      MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASS}"
+    ports:
+      - '${DB_PORT}:${DB_PORT}'
+#     volumes:
+#       - ./backend/database:/docker-entrypoint-initdb.d
+volumes:
+  camera_track_db:

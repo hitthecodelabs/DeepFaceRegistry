@@ -1,0 +1,10 @@
+version: '3.3'
+services:  
+  node:
+    tty: true
+    image: node:14.17.3
+    volumes:
+      - .:/camera_track
+    #command: npm run dev
+    ports:
+      - '4000:4000'
