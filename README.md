@@ -41,3 +41,17 @@ cd camera_track_backend
 poetry run python manage.py runserver localhost:8000
 ```
 This will start the backend server on http://localhost:8000/
+
+
+## Contributing
+Contributions to DeepFaceRegistry are welcome! Here's how you can contribute:
+
+Fork the repository on GitHub.
+Create a new branch for your proposed feature or fix.
+Commit your changes with an informative description.
+Push your branch and submit a pull request.
+We appreciate your input!
+
+## License
+DeepFaceRegistry is open source software licensed under the MIT License. See the LICENSE file for more details.
+
